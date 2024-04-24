@@ -1,10 +1,10 @@
 # Gradient Convolution Kernel Compensation Applied to Surface Electromyograms
 
-This repository contains a personal, unofficial implementation of the algorithm described in the paper [Gradient Convolution Kernel Compensation Applied to Surface Electromyograms](https://link.springer.com/chapter/10.1007/978-3-540-74494-8_77).  It is written in Python and is intended for educational and research purposes.
+This repository contains a personal, unofficial implementation of the algorithm described in the paper [Gradient Convolution Kernel Compensation Applied to Surface Electromyograms](https://link.springer.com/chapter/10.1007/978-3-540-74494-8_77). 
 
 ## Description
 
-This project implements the methods discussed in the referenced paper using Python. The main focus is on applying gradient convolution kernel compensation to surface electromyograms (sEMG) data to enhance the signal processing pipeline.
+This project implements the methods discussed in the referenced paper using Python. The main focus is on applying gradient convolution kernel compensation to surface electromyograms (sEMG) data to estimate the motor unit action potential (MUAP) firing times. 
 
 ## Installation
 
@@ -34,10 +34,12 @@ pip install -r requirements.txt
 To run the notebook that contains the implementation, use the following command:
 
 ```sh
-jupyter notebook test/main.ipynb
+PYTHONPATH="$(pwd)" python -m jupyter notebook test/main.ipynb
 ```
 
-This will open the Jupyter Notebook in your browser where you can run the cells interactively.
+This will open the Jupyter Notebook in your browser where you can run the cells interactively. The `pwd` command is used to get the current directory path in Unix-based systems. If you are using Windows, you can replace `$(pwd)` with the full path to the repository.
+
+
 
 ## Disclaimer
 
